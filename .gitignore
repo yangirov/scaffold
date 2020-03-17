@@ -1,0 +1,16 @@
+node_modules/
+package-lock.json
+obj
+*.suo
+bin/
+build
+Resharper
+packages/
+*.csproj.user
+*.DotSettings.user
+out/*
+bin_Test
+.vs
+*.pubxml.user
+front/build
+front/build

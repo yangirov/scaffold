@@ -1,0 +1,36 @@
+{
+  "name": "generator-ufadotnet",
+  "version": "0.1.0",
+  "description": "UfaDotNet simple scaffold",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "yeoman-generator": "^2.0.5",
+    "yosay": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-es2015-spread": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "yeoman-assert": "^2.2.1"
+  },
+  "main": "generators/app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangirov/scaffold.git"
+  },
+  "author": "Emil Yangirov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangirov/scaffold/issues"
+  },
+  "homepage": "https://github.com/yangirov/scaffold#readme"
+}

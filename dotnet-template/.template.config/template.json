@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Emil Yangirov",
+    "classifications": [ "Common", "Code" ],
+    "identity": "UfaDotNet",
+    "name": "UfaDotNet Scaffold",
+    "shortName": "model",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "symbols": {
+        "ModelName": {
+            "type": "parameter",
+            "replaces": "{ModelName}",
+            "FileRename": "ModelName"
+        },
+        "DbTableName": {
+            "type": "parameter",
+            "replaces": "{DbTableName}"
+        },
+        "ServiceName": {
+            "type": "parameter",
+            "replaces": "{ServiceName}",
+            "FileRename": "ServiceName"
+        },
+        "WithTest": {
+            "type": "parameter",
+            "datatype": "bool",
+            "description": "Генерация тестов",
+            "defaultValue": "false"
+        }
+    },
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "condition": "(!WithTest)",
+                    "exclude": [
+                        "Api.Tests/ModelNameTest.cs"
+                    ]
+                }
+            ]
+        }
+    ],
+    "postActions": [
+        {
+            "condition": "true",
+            "description": "Ending",
+            "manualInstructions": [{ "text": "Ура! Вы дошли до конца." }],
+            "actionId": "30C66942-E0B6-4F7C-9008-378DCD16E600",
+            "continueOnError": true
+        }
+    ]
+}
